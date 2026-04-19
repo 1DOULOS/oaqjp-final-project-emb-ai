@@ -1,0 +1,6 @@
+C:\Users\ngind\Desktop\python\oaqjp-final-project-emb-ai> python -c "from EmotionDetection import emotion_detector; print(type(emotion_detector)); print(emotion_detector)"
+<class 'function'>
+<function emotion_detector at 0x00000239BAD7D4E0>
+
+EmotionDetection is a valid importable package.
+emotion_detector function is successfully accessible via the package.

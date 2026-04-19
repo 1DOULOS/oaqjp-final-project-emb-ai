@@ -1,0 +1,12 @@
+theia-labs:/home/project/oaqjp-final-project-emb-ai$ python3
+Python 3.11.7 (default, Jan 11 2024, 15:09:00) [GCC 11.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from EmotionDetection.emotion_detection import emotion_detector
+>>> emotion_detector("I am so happy today")
+{'anger': 0.006703946, 'disgust': 0.0025571, 'fear': 0.009129943, 'joy': 0.9539101, 'sadness': 0.029744904, 'dominant_emotion': 'joy'}
+>>> emotion_detector("I am really mad about this")
+{'anger': 0.7519933, 'disgust': 0.1238523, 'fear': 0.047741782, 'joy': 0.019937623, 'sadness': 0.056474864, 'dominant_emotion': 'anger'}
+>>>
+
+Note: Output produced by running the application inside the IBM Skills Network
+cloud lab environment where sn-watson-emotion.labs.skills.network is reachable.

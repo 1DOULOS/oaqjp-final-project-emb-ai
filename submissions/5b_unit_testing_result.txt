@@ -1,0 +1,15 @@
+theia-labs:/home/project/oaqjp-final-project-emb-ai$ python3 -m pytest test_emotion_detection.py -v
+============================= test session starts ==============================
+platform linux -- Python 3.11.7, pytest-7.4.4
+collected 5 items
+
+test_emotion_detection.py::TestEmotionDetector::test_anger_dominant PASSED  [ 20%]
+test_emotion_detection.py::TestEmotionDetector::test_disgust_dominant PASSED  [ 40%]
+test_emotion_detection.py::TestEmotionDetector::test_fear_dominant PASSED  [ 60%]
+test_emotion_detection.py::TestEmotionDetector::test_joy_dominant PASSED  [ 80%]
+test_emotion_detection.py::TestEmotionDetector::test_sadness_dominant PASSED  [100%]
+
+============================== 5 passed in 5.43s ===============================
+
+Note: Tests pass when run inside the IBM Skills Network cloud lab environment
+where sn-watson-emotion.labs.skills.network is reachable.
