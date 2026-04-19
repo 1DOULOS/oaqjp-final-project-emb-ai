@@ -1,8 +1,15 @@
 """Flask server for the Emotion Detector web application."""
+import os
+import sys
 from flask import Flask, render_template, request
-from EmotionDetection.emotion_detection import emotion_detector
 
-app = Flask("Emotion Detector")
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from EmotionDetection.emotion_detection import emotion_detector  # noqa: E402
+
+_dir = os.path.dirname(os.path.abspath(__file__))
+app = Flask("Emotion Detector",
+            template_folder=os.path.join(_dir, "templates"),
+            static_folder=os.path.join(_dir, "static"))
 
 
 @app.route("/emotionDetector")
@@ -32,4 +39,5 @@ def render_index_page():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
